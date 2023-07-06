@@ -1,0 +1,38 @@
+#blocklyDiv {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 10;
+}
+
+.convertBtn {
+  margin: auto;
+  display: flex;
+  justifyContent: 'center';
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  border: 1px solid #4db5ff;
+  cursor: pointer;
+  color: #4db5ff;
+}
+
+
+.fill-height {
+  height: calc(100vh - 114px);
+}
+
+.blockly-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.convertBtn:hover {
+    background: green;
+    color: white;
+    border-color: green;
+}
+
+
+
