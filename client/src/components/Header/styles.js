@@ -13,8 +13,11 @@ export default makeStyles((theme) => ({
       padding: '10px 50px',
     },
     heading: {
-      color: 'rgba(0,183,255, 1)',
+      color: '#080d26',
       textDecoration: 'none',
+      '&:hover' : {
+        color: '#5e584e',
+      },
     },
     image: {
       marginLeft: '15px',
@@ -39,6 +42,9 @@ export default makeStyles((theme) => ({
     },
     purple: {
       color: theme.palette.getContrastText(deepPurple[500]),
-      backgroundColor: deepPurple[500],
+      backgroundColor: '#080d26',
+      '&:hover' : {
+        color: 'black',
+      }
     },
   }));

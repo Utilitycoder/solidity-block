@@ -14,7 +14,7 @@ export default makeStyles((theme) => ({
       },
     },
     container: {
-      marginBottom: '40px'
+      marginBottom: '100px'
     },
     image: {
       height: '100%'

@@ -35,16 +35,17 @@ const Header = () => {
     }, [location])
 
     return (
-        <AppBar className={classes.appBar} position="static" color="inherit">
+        // <AppBar className={classes.appBar} position="static" color="inherit">
+        <div className={classes.appBar}>
             <div className={classes.brandContainer}>
                 <Typography
                     component={Link}
                     to="/"
                     className={classes.heading}
-                    variant="h2"
-                    align="center"
+                    variant="h4"
+                    align="lef"
                 >
-                    Hyper Saucer
+                    Solidity Blocks
                 </Typography>
             </div>
 
@@ -53,12 +54,11 @@ const Header = () => {
                 component={Link}
                 to="/sample"
                 variant="contained"
-                color="secondary"
             >
                 See Sample
             </Button>
 
-            <Button className={classes.purple} component={Link} to="/askAI" variant="contained" color="secondary">
+            <Button className={classes.purple} component={Link} to="/askAI" variant="contained">
                     Ask AI
             </Button>
 
@@ -79,12 +79,12 @@ const Header = () => {
                         </Button>
                     </div>
                 ) : (
-                    <Button component={Link} to="/auth" variant="contained" color="primary">
+                    <Button component={Link} to="/auth" variant="contained" className={classes.purple}>
                         Sign In
                     </Button>
                 )}
             </Toolbar>
-        </AppBar>
+        </div>
     )
 }
 

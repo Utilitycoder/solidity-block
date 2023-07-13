@@ -16,7 +16,7 @@ const Sample = () => {
 
 
     return (
-        <Container className={classes.container} component="main" maxWidth="lg">
+        <Container className={classes.container} maxWidth="lg">
             <Paper>
                 <ImageList cols={1} rowHeight={500} gap={12}>
                         {sampleBlocks.map((item) => (
